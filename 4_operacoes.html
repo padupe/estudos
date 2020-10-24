@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Operações em JavaScript</title>
+</head>
+<style>
+    body{
+        background-color: rgb(128, 45, 45);
+    }
+    h4{
+        font: bolder 27pt 'Arial';
+        color: white;
+        margin-bottom: 0px;
+    }
+    h3{
+        font: normal 18pt 'Century Gothic';
+        color: goldenrod;
+        margin-top: 0px;
+    }
+    input{
+        height: 25px;
+        width: 100px;
+    }
+    div#adicao{
+        background: green;
+        width: 350px;
+        height: 80px;
+        line-height: center;
+        text-align: center;
+        font: normal 16pt 'Arial Narrow';
+        color: white;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    div#subtracao{
+        background: red;
+        width: 350px;
+        height: 80px;
+        line-height: center;
+        text-align: center;
+        font: normal 16pt 'Arial Narrow';
+        color: white;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    div#multiplicacao{
+        background: yellow;
+        width: 350px;
+        height: 80px;
+        line-height: center;
+        text-align: center;
+        font: normal 16pt 'Arial Narrow';
+        color: black;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    div#divisao{
+        background: grey;
+        width: 350px;
+        height: 80px;
+        line-height: center;
+        text-align: center;
+        font: normal 16pt 'Arial Narrow';
+        color: black;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+</style>
+<body>
+    <h4>As Quatro Operações</h4>
+    <h3>Vamos calcular...</h3>
+    <div id="adicao">Adição</br>
+        <input type="number" name="txtad1" id="txtad1"> +
+        <input type="number" name="txtad2" id="txtad2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="resadicao">Eis o Resultado</div>
+    </div>
+
+    <div id="subtracao">Subtração</br>
+        <input type="number" name="txtsub1" id="txtsub1"> - 
+        <input type="number" name="txtsub2" id="txtsub2">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <div id="ressubtracao">Eis o Resultado</div>
+    </div>
+    
+    <div id="multiplicacao">Multiplicação</br>
+        <input type="number" name="txtmult1" id="txtmult1"> x
+        <input type="number" name="txtmult2" id="txtmult2">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <div id="resmultiplicacao">Eis o Resultado</div>
+    </div>
+
+    <div id="divisao">Divisão</br>
+        <input type="number" name="txtdiv1" id="txtdiv1"> /
+        <input type="number" name="txtdiv2" id="txtdiv2">
+        <input type="button" value="Dividir" onclick="dividir()">
+        <div id="resdivisao">Eis o Resultado</div>
+    </div>   
+</body>
+<script>
+    function somar(){
+        var ad1 = document.getElementById('txtad1')
+        var ad2 = document.getElementById('txtad2')
+        var resultadoad = document.getElementById('resadicao')
+        var a1 = Number(ad1.value)
+        var a2 = Number(ad2.value)
+        var adicao = a1 + a2
+        resadicao.innerHTML = `A soma entre ${a1} e ${a2} é igual a ${adicao}.`
+    }
+
+    function subtrair(){
+        var sub1 = document.getElementById('txtsub1')
+        var sub2 = document.getElementById('txtsub2')
+        var resultadosub = document.getElementById('ressubtracao')
+        var s1 = Number(sub1.value)
+        var s2 = Number(sub2.value)
+        var subtracao = s1 - s2
+        ressubtracao.innerHTML = `A subtração de ${s1} menos ${s2} é igual a ${subtracao}.`
+    }
+
+    function multiplicar(){
+        var mult1 = document.getElementById('txtmult1')
+        var mult2 = document.getElementById('txtmult2')
+        var resultadomult = document.getElementById('resmultiplicacao')
+        var m1 = Number(mult1.value)
+        var m2 = Number(mult2.value)
+        var multiplicacao = m1 * m2
+        resmultiplicacao.innerHTML = `A multiplicação de ${m1} por ${m2} é igual a ${multiplicacao}.`
+    }
+
+    function dividir(){
+        var div1 = document.getElementById('txtdiv1')
+        var div2 = document.getElementById('txtdiv2')
+        var resultadodiv = document.getElementById('resdivisao')
+        var d1 = Number(div1.value)
+        var d2 = Number(div2.value)
+        var divisao = d1 / d2
+        resdivisao.innerHTML = `A divisão de ${d1} por ${d2} é igula a ${divisao}.`
+    }
+</script>
+</html>
