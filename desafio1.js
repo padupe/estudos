@@ -125,9 +125,14 @@ function pares() {
                 }
             }
         } else {
-            window.alert ("Impossível Verificar!")
-            res02.innerHTML = '"Número 2" precisa ser <strong>MAIOR</strong> que "Número 1".'
-            }
+            window.alert (`Impossível Verificar! "Número 2" será considerado o dobro de "Número 1": ${n1*2}`)
+            var n2 = n1*2
+            for (var i = n1; i <= n2; i++) {
+                if (i % 2 == 0) {
+                    res02.innerHTML += ` ${i} /`
+                }
+            } 
+        }
         res02.innerHTML += "."    
     }
 }
