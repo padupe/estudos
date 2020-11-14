@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 / RocketSeat</title>
+    <link rel="stylesheet" href="desafio1.css">
+</head>
+<body>
+    <header>
+        <h2>Módulo 1 - RocketSeat</h2>
+    </header>
+    <section>
+        <div id="ex01">
+            <h1>Exerício 01</h1>
+            <p>Cadastro de Usuário</p>
+            <p>Nome: <input type="text" name="user" id="user"></p>
+            <p>Endereço: <input type="text" name="end" id="end"></p>
+            <p>Número: <input type="number" name="num" id="num"></p>
+            <p>Bairro: <input type="text" name="bairro" id="bairro"></p>
+            <p>Cidade: <input type="text" name="city" id="city"></p>
+            <p>Estado: <select name="uf" id="uf">
+                <option value="0" selected disabled></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="PR">Paraná</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SE">Sergipe</option>
+                <option value="SP">São Paulo</option>
+                <option value="TO">Tocantins</option>
+            </select></p>
+            <p><input type="button" value="Confirmar" onclick='confirmar()'></p>
+            <div id='res01'></div>
+        </div>
+
+        <div id='ex02'>
+            <h1>Exerício 02</h1>
+            <p>Verificar números pares</p>
+            <p>Número 1: <input type="number" name="num1" id="num1"></p>
+            <p>Número 2: <input type="number" name="num2" id="num2"></p>
+            <p><input type="button" value="Verificar Pares" onclick='pares()'></p>
+            <div id='res02'></div>
+        </div>
+
+        <div id='ex03'>
+            <h1>Exercício 03</h1>
+            <p>Busca de Habilidade</p>
+            <p>Habilidade Buscada: <select name="buscahab" id="buscahab">
+                <option value="0" selected disabled></option>
+                <option value="1">CSS</option>
+                <option value="2">HTML</option>
+                <option value="3">Java</option>
+                <option value="4">JavaScript</option>
+                <option value="5">PHP</option>
+                <option value="6">Phyton</option>             
+            </select></p>
+            <p>Nome: <input type="text" name="aluno" id="aluno"></p>
+            <p>Habilidade 1: <input type="text" name="hab1" id="hab1"></p>
+            <p>Habilidade 2: <input type="text" name="hab2" id="hab2"></p>
+            <p>Habilidade 3: <input type="text" name="hab3" id="hab3"></p>
+            <p><input type="button" value="Verificar" onclick='buscahabilidade()'></p>
+            <div id='res03'></div>
+        </div>
+
+        <div id="ex04">
+            <h1>Exerício 04</h1>
+            <p>Experiência</p>
+            <p>Nome: <input type="text" name="est" id="est"></p>
+            <p>Tempo de Estudo (anos): <input type="number" name="exp" id="exp"></p>
+            <p><input type="button" value="Verificar" onclick='confereExp()'></p>
+            <div id='res04'></div>
+        </div>
+
+        <div id='ex05'>
+            <h1>Exercício 05</h1>
+            <p>Habilidades com Vetores</p>
+            <p><strong>Diego</strong> / Habiliddes: JavaScript, ReactJS, Redux</p>
+            <p><strong>Gabriel</strong> / Habilidades: VueJS, Ruby on Rails, Elixir</p>
+            <p><input type="button" value="Aplicar" onclick='vetoreshab()'></p>
+            <p><div id='res105'>Modelo 1 / <strong>for(_ of _) +.join(){}</strong>: </div></p>
+            <p><div id='res205'>Modelo 2 / <strong>for (){}</strong>: </div></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Paulo Peixoto</p>
+    </footer>
+    <script src="desafio1.js"></script>    
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+    font: normal 12pt Arial;
+    color: white;
+}
+header{
+    background: rgb(138, 6, 138);
+    text-align: center;
+    border-radius: 15px;
+}
+h2{
+    font: bolder 14pt Century Gothic;
+}
+section{
+    background: rgb(41, 40, 40);
+    border-radius: 15px;
+    padding: 2px;
+}
+h1{
+    font: bolder 13pt Century Gothic;
+    color: yellow;
+}
+div#ex01{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+div#ex02{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+div#ex03{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+div#ex04{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+div#ex05{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+footer{
+    background: rgb(4, 233, 4);
+    color: black;
+    text-align: center;
+    border-radius: 5px
+}
