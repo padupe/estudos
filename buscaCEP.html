@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>CEP: <input type="text" maxlength="9" id="txtcep" onchange="buscaCEP(this.value)"></input></p>
+    <p>Logradouro: <input id="logradouro"></p>
+    <p>Complemento: <input id="complemento"></p>
+    <p>Bairro: <input id="bairro"></p>
+    <p>Cidade: <input id="cidade"></p>
+    <p>UF: <input id="uf"></p>
+</body>
+<script>
+    function buscaCEP() {
+        console.warn("buscaCEP")
+        var Fcep = document.getElementById("txtcep")
+        var Flog = document.getElementById("logradouro")
+        var Fcomp = document.getElementById("complemento")
+        var Fbairro = document.getElementById("bairro")
+        var Fcidade = document.getElementById("cidade")
+        var Fuf = document.getElementById("uf")
+
+        cep = Fcep.value.replace("-","")
+
+        var xhr = new XMLHttpRequest()
+        var infoCEP
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                infoCEP = xhr.response
+                infoCEP = JSON.parse(infoCEP)
+                
+                Flog.value = infoCEP.logradouro
+                Fcomp.value = infoCEP.complemento
+                Fbairro.value = infoCEP.bairro
+                Fcidade.value = infoCEP.localidade
+                Fuf.value = infoCEP.uf
+                
+            }
+        }
+
+        xhr.open("GET",`https://viacep.com.br/ws/${cep}/json/`)
+
+        xhr.send() 
+
+        //`https://viacep.com.br/ws/${cep}/json/`
+        console.log(xhr)
+        console.log(infoCEP)
+    }
+
+    //buscaCEP()
+</script>
+</html>
