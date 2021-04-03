@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática</title>
+    <link rel="stylesheet" href="matematica.css">
+</head>
+<body onload='carregar()'>
+    <header>
+        <h2>Aplicando JS / Matemática</h2>
+    </header>
+    <section>
+        <div id="inicial">
+            <div id="resdata">Data</div><br>
+            <div id="resdia">Dia</div><br>
+            <div id="reshora">Hora</div>
+        </div>
+
+        <div id="user">
+            <p>Nome: <input type="text" name="nome" id="nome"></p>
+            <p>Sexo: <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            | <input type="radio" name="radsex" id="femi">
+            <label for="femi">Feminino</label></p>
+            <input type="button" value="Confirmar Dados" onclick='confirmar()'>
+            <div id="resuser"></div>
+        </div>
+
+        <div id="calculos">
+            <h1>Cálculos</h1>
+            <div id="adicao">
+                <p>Adição</p>
+                <p><input type="number" name="txtad1" id="txtad1"> +
+                <input type="number" name="txtad2" id="txtad2">
+                <input type="button" value="Calcular" onclick='adicao()'></p>
+                <div id="resadicao"></div>
+            </div>
+
+            <div id="subtracao">
+                <p>Subtração</p>
+                <p><input type="number" name="txtsub1" id="txtsub1"> -
+                <input type="number" name="txtsub2" id="txtsub2">
+                <input type="button" value="Calcular" onclick='subtracao()'></p>
+                <div id="ressubtracao"></div>
+            </div>
+
+            <div id="divisao">
+                <p>Divisão</p>
+                <p><input type="number" name="txtdiv1" id="txtdiv1"> ÷
+                <input type="number" name="txtdiv2" id="txtdiv2">
+                <input type="button" value="Calcular" onclick='divisao()'></p>
+                <div id="resdivisao"></div>
+            </div>
+
+            <div id="multiplicacao">
+                <p>Mulitiplicação</p>
+                <p><input type="number" name="txtmult1" id="txtmult1"> x
+                <input type="number" name="txtmult2" id="txtmult2">
+                <input type="button" value="Calcular" onclick='multiplicacao()'></p>
+                <div id="resmultiplicacao"></div>
+            </div>
+        </div>
+
+        <div id="tabuada">
+            <h1>Tabuada</h1>
+            <p>Informe um Número: <input type="number" name="txttab" id="txttab">
+            <input type="button" value="Gerar Tabuada" onclick='tabuada()'></p>
+            <div id="seltab">
+                <select name="tabuadajs" id="seltab" size='10'>
+                    <option id="txttab1">Digite um Número acima.</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="contador">
+            <h1>Contador</h1>
+            <p>Início: <input type="number" name="txtinicio" id="inicio"></p>
+            <p>Fim: <input type="number" name="txtfim" id="fim"></p>
+            <p>Passo: <input type="number" name="txtpasso" id="passo"></p>
+            <input type="button" value="Contar" onclick='contador()'>
+            <div id="rescont"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Paulo Peixoto</p>
+    </footer>
+    <script src="matematica.js"></script>
+</body>
+</html>

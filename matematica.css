@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(236, 234, 223);
+    font: normal 12pt Arial;
+}
+header{
+    background: darkblue;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(14, 13, 13);
+}
+section{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 3px;
+}
+div#inicial{
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+div#user{
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 10px;
+    padding: 0.5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+div#calculos{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+div#tabuada{
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 5px;    
+}
+div#contador{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;    
+}
+footer{
+    background: darkblue;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(14, 13, 13);
+    font-style: italic;
+}
